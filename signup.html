@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css"></head><body>
+<div class="container"><div class="nav">
+            <ul><li><a href="login.html"> LOG IN </a></li>
+         <li><a href="signup.html" > SIGN UP </a></li>
+         <li><a href="registration.html"> REGISTRATION </a></li></ul></div><div class="signup">
+            <div class="sign"><form action="">
+    <a href="https://www.google.com/">Google</a>&nbsp;   &nbsp;   <a href="neha@gmail.com">Email</a><br>
+    <br>  <input type="text" class="input" id="username" value=""  placeholder="Username"><br>
+    <br>  <input type="password" class="input" id="pw" value="" required placeholder="Password"><br>
+<br> <input type="password" class="input" id="cpw" value="" required placeholder="Confirm Password">
+    <br><br><button class="btn" onclick="">Sign Up</button>
+<p class="p">Already Have an Account? &nbsp; <a href="login.html">Log In</a></p></form></div> </div></div>
+<script>function data() {
+                var a=document.getElementById("username").value;
+                var b=document.getElementById("pw").value;
+                var c=document.getElementById("pw").value;
+                if(a=="" || b=="" || c==""){
+                    alert("All Fields are Mandatory");return false;}
+                else if(b!=c){
+                    alert("Please enter same Password");return false;}
+                else{return  true;}}</script></body></html>

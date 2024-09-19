@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login</title>
+    <link rel="stylesheet" href="login.css"></head>
+<body><div class="container"><div class="nav">
+            <ul><li><a href="login.html"> LOG IN </a></li>
+                <li><a href="signup.html" > SIGN UP </a></li>  
+                <li><a href="registration.html"> REGISTRATION </a></li></ul></div>
+   <div class="signup"><div class="sign">
+        <form onsubmit=" return data()" action="">
+        <br>  <input type="text" class="input" id="username"  value=""  placeholder="Username"><br>
+        <br>  <input type="password" class="input" id="pw"  value="" required placeholder="Password" ><br> 
+<br>  <input type="checkbox" name="Remember Me"  class="me" id=""> Remember Me  &nbsp; &nbsp;
+<a href="nehagupta110802@gmail.com">Forget Password</a>
+<br><br><button class="btn" oncllick="openPopup()" id="btn" onclick="">login Up</button>
+                <p class="p">Don't Have an Account? &nbsp; <a href="signup.html">Sign Up</a></p>     
+            <div class="valid" id="valid"><h2>Thank You!</h2>
+            <p>Your details has been successful submitted.Thanks!.</p>
+            <button type="button" onclick="closePopup()">OK</button></div></form>
+            </div></div></div>
+<script>function data() {
+        var a=document.getElementById("username").value;
+        var b=document.getElementById("pw").value;
+        if(a=="" || b==""){alert("All Fields are Mandatory");return false;}
+        else if(c!=d){alert("Please enter same Password");return false;}
+        else{ return  true;}}
+   </script></body></html>
+<!-- // else if(b.length<10||b.length>10)
+        // {
+        //     alert("Number should be 10 Digits! Please enter valid Number");
+        //     return false;
+        // }
+
+        // else if(isNaN(b))
+        // {
+        //     alert("Only Numbers are allowed ! Please enter valid Number");
+        //     return false;
+        // }
+
+        
+    
+        
+    
+
+
+    let valid=document.getElementById("valid");
+
+    function openPopup()
+    {
+        valid.classList.add(".open-valid");
+    }
+    function closePopup()
+    {
+        valid.classList.remove(".open-valid");
+    }
+    
+</script>
+</body>
+</html> -->
